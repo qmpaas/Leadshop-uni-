@@ -1,0 +1,81 @@
+/* start--主题色--start */
+$themes: (
+  red_theme: (
+    font_color: #e60b30,
+    background_color: #e60b30,
+    border_color: #e60b30,
+    opacify_background_0: rgba(230, 11, 48, 0.05)
+  ),
+  purple_theme: (
+    font_color: #8f2df3,
+    background_color: #8f2df3,
+    border_color: #8f2df3,
+    opacify_background_0: rgba(143, 45, 243, 0.05)
+  ),
+  blue_theme: (
+    font_color: #33a7ff,
+    background_color: #33a7ff,
+    border_color: #33a7ff,
+    opacify_background_0: rgba(51, 167, 255, 0.05)
+  ),
+  green_theme: (
+    font_color: #1fc551,
+    background_color: #1fc551,
+    border_color: #1fc551,
+    opacify_background_0: rgba(31, 197, 81, 0.05)
+  ),
+  orange_theme: (
+    font_color: #ff7f00,
+    background_color: #ff7f00,
+    border_color: #ff7f00,
+    opacify_background_0: rgba(255, 127, 0, 0.05)
+  ),
+  golden_theme: (
+    font_color: #caa45a,
+    background_color: #caa45a,
+    border_color: #caa45a,
+    opacify_background_0: rgba(202, 164, 90, 0.05)
+  )
+);
+//遍历主题map
+@mixin themeify {
+  @each $theme-name, $theme-map in $themes {
+    $theme-map: $theme-map !global;
+    [data-theme='#{$theme-name}'] & {
+      @content;
+    }
+  }
+}
+
+@function themed($key) {
+  @return map-get($theme-map, $key);
+}
+
+//获取背景颜色
+@mixin background_color($color) {
+  @include themeify {
+    background-color: themed($color) !important;
+  }
+}
+
+//获取渐变背景颜色
+@mixin background_linear($color, $deg, $min, $max) {
+  @include themeify {
+    background: linear-gradient($deg, themed($color) $min, themed($color) $max) !important;
+  }
+}
+
+//获取字体颜色
+@mixin font_color($color) {
+  @include themeify {
+    color: themed($color) !important;
+  }
+}
+
+//获取边框颜色
+@mixin border_color($color) {
+  @include themeify {
+    border-color: themed($color) !important;
+  }
+}
+/* end--主题色--end */

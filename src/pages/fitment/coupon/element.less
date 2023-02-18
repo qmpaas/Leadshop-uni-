@@ -1,0 +1,214 @@
+.le-coupon-item {
+  height: 160px;
+  border-radius: 16px;
+  position: relative;
+
+  .le-coupon-item-content {
+    height: 100%;
+
+    .le-coupon-item-left {
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+      margin: 10px 0 10px 10px;
+    }
+
+    .le-coupon-item-center {
+      width: 28px;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+
+      .le-item-doc {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        width: 16px;
+        height: 16px;
+        background: #fff;
+      }
+
+      .le-item-doc-a {
+        transform: translate(-50%, -50%);
+      }
+
+      .le-item-doc-b {
+        bottom: 0;
+        transform: translate(-50%, 50%);
+      }
+
+      .le-item-center {
+        width: 28px;
+        height: calc(100% - 20px);
+        margin: 10px 0;
+        position: relative;
+        overflow: hidden;
+
+        .sawtooth {
+          display: block;
+          width: 16px;
+          height: 110px;
+          background-image: radial-gradient(circle, #ffffff 30%, transparent 35%);
+          background-size: 16px 22px;
+          background-repeat: repeat-y;
+          position: relative;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .le-item-center-doc {
+          width: 32px;
+          height: 32px;
+          border: 2px solid transparent;
+          border-radius: 50%;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .le-item-center-doc-a {
+          top: -22px;
+        }
+
+        .le-item-center-doc-b {
+          bottom: -22px;
+        }
+      }
+
+      .le-coupon-item-center-line {
+        position: absolute;
+        width: 2px;
+        height: 100px;
+        top: 50%;
+        left: 50%;
+        background-size: 2px 20px;
+        background-repeat: repeat-y;
+        background-position: center;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .le-coupon-item-right {
+      margin: 10px 10px 10px 0;
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+      padding: 7px 0;
+    }
+
+    .le-coupon-item-price {
+      font-family: DIN;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .le-coupon-item-price:before {
+      content: '￥';
+      font-size: 24px;
+      font-family: PingFang SC;
+      font-weight: 500;
+    }
+
+    .le-coupon-item-min {
+      font-family: PingFang SC;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .le-coupon-iem-appoint {
+      font-size: 22px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    .le-coupon-btn {
+      text-align: center;
+    }
+
+    .le-coupon-item-text {
+      padding: 22px 0 22px 26px;
+    }
+
+    .le-coupon-item-name {
+      font-size: 30px;
+      font-family: PingFang SC;
+      font-weight: 500;
+      line-height: 40px;
+    }
+  }
+}
+
+.le-item-marginRight-odd:nth-child(odd),
+.le-item-marginRight {
+  margin-right: 12px;
+}
+
+.le-item-Jagged {
+  position: absolute;
+  width: 16px;
+  height: 140px;
+  background-image: radial-gradient(circle, #ffffff 40%, transparent 45%);
+  background-size: 16px 36px;
+  background-repeat: repeat-y;
+  top: 50%;
+}
+
+.le-item-Jagged:first-child {
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+
+.le-item-Jagged:last-child {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.le-coupon-item.fillet {
+  .le-coupon-item-left:before,
+  .le-coupon-item-left:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(circle, #ffffff 70%, transparent 70%);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .le-coupon-item-left:before {
+    left: 0;
+    top: 0;
+    transform: translate(-45%, -45%);
+  }
+
+  .le-coupon-item-left:after {
+    left: 0;
+    bottom: 0;
+    transform: translate(-45%, 45%);
+  }
+
+  .le-coupon-item-right:before,
+  .le-coupon-item-right:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: radial-gradient(circle, #ffffff 70%, transparent 70%);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+  }
+
+  .le-coupon-item-right:before {
+    right: 0;
+    top: 0;
+    transform: translate(45%, -45%);
+  }
+
+  .le-coupon-item-right:after {
+    right: 0;
+    bottom: 0;
+    transform: translate(45%, 45%);
+  }
+}

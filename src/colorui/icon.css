@@ -1,0 +1,332 @@
+@keyframes cuIcon-spin {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.cuIconfont-spin {
+  -webkit-animation: cuIcon-spin 2s infinite linear;
+  animation: cuIcon-spin 2s infinite linear;
+  display: inline-block;
+}
+
+.cuIconfont-pulse {
+  -webkit-animation: cuIcon-spin 1s infinite steps(8);
+  animation: cuIcon-spin 1s infinite steps(8);
+  display: inline-block;
+}
+
+[class*='cuIcon-'] {
+  font-family: 'cuIcon';
+  font-size: inherit;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'iconfont'; /* Project id 2111115 */
+  src: url('//at.alicdn.com/t/font_2111115_qs7gzdxbkb.woff2?t=1630029059499') format('woff2'),
+    url('//at.alicdn.com/t/font_2111115_qs7gzdxbkb.woff?t=1630029059499') format('woff'),
+    url('//at.alicdn.com/t/font_2111115_qs7gzdxbkb.ttf?t=1630029059499') format('truetype');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconshipin:before {
+  content: '\e6e2';
+}
+
+.iconxiaochengxu:before {
+  content: '\e6e0';
+}
+
+.iconweixin:before {
+  content: '\e6e1';
+}
+
+.iconcha:before {
+  content: '\e6dd';
+}
+
+.iconbaoguo:before {
+  content: '\e6db';
+}
+
+.icondynamic_release:before {
+  content: '\e6da';
+}
+
+.iconfold1:before {
+  content: '\e6d9';
+}
+
+.iconfenxiaozhuangshi:before {
+  content: '\e6d6';
+}
+
+.iconshuzishanchu:before {
+  content: '\e6d1';
+}
+
+.iconpopup_close2:before {
+  content: '\e6d0';
+}
+
+.iconsuccess:before {
+  content: '\e6ce';
+}
+
+.iconwarning:before {
+  content: '\e6cf';
+}
+
+.iconfold:before {
+  content: '\e6cd';
+}
+
+.iconlike1:before {
+  content: '\e6cb';
+}
+
+.iconlike2:before {
+  content: '\e6cc';
+}
+
+.icondistribution_dynamic:before {
+  content: '\e6c9';
+}
+
+.icondistribution_list:before {
+  content: '\e6ca';
+}
+
+.icona-personalcenter_distribution:before {
+  content: '\e6c8';
+}
+
+.iconpersonalcenter_information:before {
+  content: '\e6c7';
+}
+
+.iconbofang:before {
+  content: '\e600';
+}
+
+.iconpersonalcenter_phone2:before {
+  content: '\e6c5';
+}
+
+.iconpersonalcenter_add:before {
+  content: '\e6c6';
+}
+
+.icontuijian:before {
+  content: '\e6b2';
+}
+
+.iconjifen:before {
+  content: '\e6ab';
+}
+
+.icongonggao:before {
+  content: '\e6a8';
+}
+
+.iconbtn_back:before {
+  content: '\e691';
+}
+
+.iconimago_loadingfail:before {
+  content: '\e690';
+}
+
+.iconpersonalcenter_phone:before {
+  content: '\e67a';
+}
+
+.iconarrow-down:before {
+  content: '\e601';
+}
+
+.icontrash:before {
+  content: '\e61a';
+}
+
+.iconarrow-top:before {
+  content: '\e62b';
+}
+
+.iconcopy:before {
+  content: '\e63a';
+}
+
+.iconproductlist_rank_second:before {
+  content: '\e69e';
+}
+
+.iconproductlist_rank_first:before {
+  content: '\e69f';
+}
+
+.iconnav_classification_normal:before {
+  content: '\e671';
+}
+
+.iconproductdetails_tab_customerservice:before {
+  content: '\e673';
+}
+
+.iconnav_personalcenter_normal:before {
+  content: '\e674';
+}
+
+.iconsearch_empty:before {
+  content: '\e675';
+}
+
+.iconproductdetails_goodsservices:before {
+  content: '\e676';
+}
+
+.iconproductdetails_tab_customerservice_online:before {
+  content: '\e677';
+}
+
+.iconproductdetails_popup_enlargethepicture:before {
+  content: '\e678';
+}
+
+.iconproductdetails_share:before {
+  content: '\e67c';
+}
+
+.iconproductdetails_tab_customerservice_telephone:before {
+  content: '\e67d';
+}
+
+.iconbtn_addtocart:before {
+  content: '\e67e';
+}
+
+.iconimago_defaultproduct:before {
+  content: '\e67f';
+}
+
+.iconsearchbar_search:before {
+  content: '\e680';
+}
+
+.iconaddress_wechataddress:before {
+  content: '\e685';
+}
+
+.iconpersonalcenter_address:before {
+  content: '\e686';
+}
+
+.iconpersonalcenter_contactus:before {
+  content: '\e688';
+}
+
+.iconorderdetails_logistics:before {
+  content: '\e689';
+}
+
+.iconshoppingcart_shopname:before {
+  content: '\e68a';
+}
+
+.iconproductrecommendation_line:before {
+  content: '\e68b';
+}
+
+.iconevaluate_uploadpictures_deleto:before {
+  content: '\e68c';
+}
+
+.iconevaluate_uploadpictures:before {
+  content: '\e68d';
+}
+
+.iconclassification_line:before {
+  content: '\e68e';
+}
+
+.iconpersonalcenter_clearcache:before {
+  content: '\e68f';
+}
+
+.iconaftersalesdetails-refund:before {
+  content: '\e692';
+}
+
+.iconaftersalesdetails-exchangegoods:before {
+  content: '\e694';
+}
+
+.iconaftersalesdetails-returngoods:before {
+  content: '\e696';
+}
+
+.iconbtn_subtract:before {
+  content: '\e697';
+}
+
+.iconbtn_add:before {
+  content: '\e698';
+}
+
+.iconpopup_close:before {
+  content: '\e699';
+}
+
+.iconevaluate_star:before {
+  content: '\e69a';
+}
+
+.iconbtn_arrow:before {
+  content: '\e69b';
+}
+
+.iconaddress_edit:before {
+  content: '\e69c';
+}
+
+.iconbtn_select:before {
+  content: '\e69d';
+}
+
+.iconnav_home_selected:before {
+  content: '\e66a';
+}
+
+.iconnav_personalcenter_selected:before {
+  content: '\e66c';
+}
+
+.iconnav_shoppingcart_normal:before {
+  content: '\e66d';
+}
+
+.iconnav_home_normal:before {
+  content: '\e66e';
+}
+
+.iconnav_classification_selected:before {
+  content: '\e66f';
+}
+
+.iconnav_shoppingcart_selected:before {
+  content: '\e670';
+}
